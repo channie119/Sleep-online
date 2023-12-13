@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngủ Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="timer" style="display: none;"></div>
+        <div id="time-selector">
+            <label for="hours">Giờ:</label>
+            <input type="number" id="hours" min="0" max="23" value="0">
+            
+            <label for="minutes">Phút:</label>
+            <input type="number" id="minutes" min="0" max="59" value="0">
+            
+            <label for="seconds">Giây:</label>
+            <input type="number" id="seconds" min="0" max="59" value="0">
+        </div>
+        <button id="start-button" onclick={startTimer()}>Bắt đầu</button>
+        <audio id="sleepAudio" src="sleep_music.mp3" loop></audio>
+        <audio id="wakeupAudio" src="wakeup_music.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
